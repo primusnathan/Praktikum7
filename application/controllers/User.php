@@ -14,4 +14,19 @@ class User extends CI_Controller{
         $data['konten']="data_diri";
         $this->load->view('template', $data);
     }
+    public function gallery()
+    {
+        $data['konten']="gallery";
+        $this->load->view('template', $data);
+    }
+    public function contact()
+    {
+        $data['konten']="contact";
+        $this->load->view('template', $data);
+    }
+    public function event()
+    {
+        $data['konten']="event";
+        $this->load->view('template', $data);
+    }
 }

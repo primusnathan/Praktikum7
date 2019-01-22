@@ -32,7 +32,7 @@
                             <span>HOME</span>
                         </a>
                     </li> 
-                    <li class="active">
+                    <li>
                         <a href="<?=base_url('index.php/user/data_diri')?>">
                             <i class="material-icons">person</i>
                             <span>Data Diri</span>
@@ -50,7 +50,7 @@
                             <span>Contact</span>
                         </a>
                     </li> 
-                    <li>
+                    <li class="active">
                         <a href="<?=base_url('index.php/user/event')?>">
                         <i class="material-icons">date_range</i>
                             <span>Event</span>
@@ -70,44 +70,18 @@
             </div>
             <!-- #Footer -->
         </aside>
-<h1 style="margin-left:15px;">Biodata</h1>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="card">
-                        <div class="header">
-                            <div class="row clearfix">
-                                <div class="col-xs-12 col-sm-6">
-                                    <h2>Data Diri</h2>
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
-                        <div class="body">
-                        	<div class="row">
-                            <div class="col-md-4">
-                            	<img style="width: 50%" src="<?=base_url('assets/images/sum.jpg')?>">
-                            </div>
-                            <div class="col-md-8">
-                            	<table class="table table-hover table-striped">
-                            		<tr>
-                            			<td>Nama</td><td>: Primus Nathan Orvala </td>
-                            		</tr>
-                            	 	<tr>
-                            			<td>Kelas</td><td>: XIR2 </td>
-                            		</tr>
-                            		<tr>
-                            			<td>Umur</td><td>: 16 thn </td>
-                            		</tr>
-                            		<tr>
-                            			<td>Alamat</td><td>: Malang </td>
-                            		</tr>
-                                    <tr>
-                                    <td>Sekolah</td><td>: SMK Telkom Malang</td>
-                                    </tr>
-                            	
-                            	</table>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="row">
+  <div class="col-sm-4" style="text-align:center;border:1px solid black;border-radius:30px"> Back2Bike<br>
+  <img src="<?=base_url()?>assets/images/event1.jpg" alt="" style="width:200px;height:100px;"> <br>
+  Kami mengkampanyekan untuk menggunakan sepeda sebagai transportasi yang harus sering digunakan karena sifat ramah lingkungannya
+  
+  </div>
+  <div class="col-sm-4" style="text-align:center;border:1px solid black;border-radius:30px">GoweSosial <br>
+  <img src="<?=base_url()?>assets/images/event2.jpg" alt="" style="width:200px;height:100px;"> <br>
+  Setiap 6 Bulan sekali, kita melelang sepeda-sepeda dan keuntungannya kita berikan kepada fakir miskin
+  </div>
+  <div class="col-sm-4" style="text-align:center;border:1px solid black;border-radius:30px;">Fun Bike <br>
+  <img src="<?=base_url()?>assets/images/event3.jpg" alt="" style="width:200px;height:100px;"> <br>
+  Setiap hari minggu, kita bersepeda mengelilingi kota. Dalam acara ini, kita juga menyempatkan diri untuk membersihkan sampah di sepanjang jalan.
+  </div>
+</div>

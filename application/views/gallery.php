@@ -32,13 +32,13 @@
                             <span>HOME</span>
                         </a>
                     </li> 
-                    <li class="active">
+                    <li>
                         <a href="<?=base_url('index.php/user/data_diri')?>">
                             <i class="material-icons">person</i>
                             <span>Data Diri</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="<?=base_url('index.php/user/gallery')?>">
                         <i class="material-icons">photo_library</i>
                             <span>Gallery</span>
@@ -70,44 +70,48 @@
             </div>
             <!-- #Footer -->
         </aside>
-<h1 style="margin-left:15px;">Biodata</h1>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="card">
-                        <div class="header">
-                            <div class="row clearfix">
-                                <div class="col-xs-12 col-sm-6">
-                                    <h2>Data Diri</h2>
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
-                        <div class="body">
-                        	<div class="row">
-                            <div class="col-md-4">
-                            	<img style="width: 50%" src="<?=base_url('assets/images/sum.jpg')?>">
-                            </div>
-                            <div class="col-md-8">
-                            	<table class="table table-hover table-striped">
-                            		<tr>
-                            			<td>Nama</td><td>: Primus Nathan Orvala </td>
-                            		</tr>
-                            	 	<tr>
-                            			<td>Kelas</td><td>: XIR2 </td>
-                            		</tr>
-                            		<tr>
-                            			<td>Umur</td><td>: 16 thn </td>
-                            		</tr>
-                            		<tr>
-                            			<td>Alamat</td><td>: Malang </td>
-                            		</tr>
-                                    <tr>
-                                    <td>Sekolah</td><td>: SMK Telkom Malang</td>
-                                    </tr>
-                            	
-                            	</table>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img  src="<?=base_url('assets/images/satu.jpg')?>" alt="Chania">
+      <div class="carousel-caption" style="color:black;">
+        <h3>Sepeda Balap</h3>
+        <p>Rasakan kecepatan tinggi</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img  src="<?=base_url('assets/images/dua.jpg')?>" alt="Chicago">
+      <div class="carousel-caption" style="color:black;">
+        <h3>Sepeda Gunung</h3>
+        <p>Lorem ipsum</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img  src="<?=base_url('assets/images/tiga.jpg')?>" alt="New York">
+      <div class="carousel-caption" style="color:black;">
+        <h3>Sepeda BMX</h3>
+        <p>Lorem ipsum</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

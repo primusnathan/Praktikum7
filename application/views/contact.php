@@ -32,7 +32,7 @@
                             <span>HOME</span>
                         </a>
                     </li> 
-                    <li class="active">
+                    <li>
                         <a href="<?=base_url('index.php/user/data_diri')?>">
                             <i class="material-icons">person</i>
                             <span>Data Diri</span>
@@ -44,7 +44,7 @@
                             <span>Gallery</span>
                         </a>
                     </li>  
-                    <li>
+                    <li class="active">
                         <a href="<?=base_url('index.php/user/contact')?>">
                         <i class="material-icons">local_phone</i>
                             <span>Contact</span>
@@ -70,13 +70,12 @@
             </div>
             <!-- #Footer -->
         </aside>
-<h1 style="margin-left:15px;">Biodata</h1>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="card">
                         <div class="header">
                             <div class="row clearfix">
                                 <div class="col-xs-12 col-sm-6">
-                                    <h2>Data Diri</h2>
+                                    <h2>Contact Person</h2>
                                 </div>
                                 
                             </div>
@@ -84,26 +83,19 @@
                         </div>
                         <div class="body">
                         	<div class="row">
-                            <div class="col-md-4">
-                            	<img style="width: 50%" src="<?=base_url('assets/images/sum.jpg')?>">
-                            </div>
+                            
                             <div class="col-md-8">
-                            	<table class="table table-hover table-striped">
+                            	<table class="table table-hover table-striped" style="font-size:40px;">
                             		<tr>
-                            			<td>Nama</td><td>: Primus Nathan Orvala </td>
+                            			<td><i class="fab fa-instagram"></i></td><td>@nathanprimus </td>
                             		</tr>
                             	 	<tr>
-                            			<td>Kelas</td><td>: XIR2 </td>
+                            			<td><i class="fab fa-facebook-square"></i></td><td>Primus Nathan</td>
                             		</tr>
                             		<tr>
-                            			<td>Umur</td><td>: 16 thn </td>
+                            			<td><i class="fab fa-whatsapp"></i></td><td>081333351987</td>
                             		</tr>
-                            		<tr>
-                            			<td>Alamat</td><td>: Malang </td>
-                            		</tr>
-                                    <tr>
-                                    <td>Sekolah</td><td>: SMK Telkom Malang</td>
-                                    </tr>
+                            		
                             	
                             	</table>
                             </div>

@@ -19,6 +19,7 @@
     <!-- Waves Effect Css -->
     <link href="<?=base_url()?>/assets/plugins/node-waves/waves.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Animation Css -->
     <link href="<?=base_url()?>/assets/plugins/animate-css/animate.css" rel="stylesheet" />
 
@@ -310,6 +311,24 @@
                         <a href="<?=base_url('index.php/user/data_diri')?>">
                             <i class="material-icons">person</i>
                             <span>Data Diri</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?=base_url('index.php/user/gallery')?>">
+                        <i class="material-icons">photo_library</i>
+                            <span>Gallery</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="<?=base_url('index.php/user/contact')?>">
+                        <i class="material-icons">local_phone</i>
+                            <span>Contact</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="<?=base_url('index.php/user/event')?>">
+                        <i class="material-icons">date_range</i>
+                            <span>Event</span>
                         </a>
                     </li> 
                 </ul>
