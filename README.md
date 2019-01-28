@@ -1,13 +1,17 @@
 # Praktikum7
 
-Dashboard ![alt text](https://github.com/primusnathan/Praktikum6/blob/master/dashboard.png)
+Datadiri ![alt text](https://github.com/primusnathan/Praktikum7/blob/master/datadiri.png)
 
-Datadiri ![alt text](https://github.com/primusnathan/Praktikum6/blob/master/datadiri.png)
+Gallery ![alt text](https://github.com/primusnathan/Praktikum7/blob/master/gallery.png)
 
-Gallery ![alt text](https://github.com/primusnathan/Praktikum6/blob/master/gallery.png)
+Contact ![alt text](https://github.com/primusnathan/Praktikum7/blob/master/contact.png)
 
-Contact ![alt text](https://github.com/primusnathan/Praktikum6/blob/master/contact.png)
+Event ![alt text](https://github.com/primusnathan/Praktikum7/blob/master/event.png)
 
-Event ![alt text](https://github.com/primusnathan/Praktikum6/blob/master/event.png)
+Daftar Pelanggan ![alt text](https://github.com/primusnathan/Praktikum7/blob/master/daftarpelanggan.png)
 
+Kategori ![alt text](https://github.com/primusnathan/Praktikum7/blob/master/kategori.png)
 
+Data Pelanggan ![alt text](https://github.com/primusnathan/Praktikum7/blob/master/datapelanggan.png)
+
+Barang ![alt text](https://github.com/primusnathan/Praktikum7/blob/master/barang.png)
