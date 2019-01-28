@@ -35,7 +35,7 @@
                 <span>Data Diri</span>
             </a>
         </li>
-        <li class="active">
+        <li>
             <a href="<?=base_url('index.php/user/gallery')?>">
             <i class="material-icons">photo_library</i>
                 <span>Gallery</span>
@@ -53,7 +53,7 @@
                 <span>Event</span>
             </a>
         </li> 
-        <li>
+        <li class="active">
             <a href="<?=base_url('index.php/kategori')?>">
             <i class="material-icons">dashboard</i>
                 <span>Kategori</span>
@@ -92,49 +92,66 @@
 </div>
 <!-- #Footer -->
 </aside>
-        
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
+<div class="block-header">
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img  src="<?=base_url('assets/images/satu.jpg')?>" alt="Chania">
-      <div class="carousel-caption" style="color:black;">
-        <h3>Sepeda Balap</h3>
-        <p>Rasakan kecepatan tinggi</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <img  src="<?=base_url('assets/images/dua.jpg')?>" alt="Chicago">
-      <div class="carousel-caption" style="color:black;">
-        <h3>Sepeda Gunung</h3>
-        <p>Lorem ipsum</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <img  src="<?=base_url('assets/images/tiga.jpg')?>" alt="New York">
-      <div class="carousel-caption" style="color:black;">
-        <h3>Sepeda BMX</h3>
-        <p>Lorem ipsum</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="card">
+                        <div class="header">
+                            <div class="row clearfix">
+                                <div class="col-xs-12 col-sm-6">
+                                <h1 style="text-align:left;">Kategori</h1>
+                                </div>
+                        </div>
+                        <div class="body">
+                        <div class="row">
+                        <a style="margin: 35px;margin-left: 1px;" href="#tambah" class="btn btn-primary" data-toggle="modal">
+                        <span class="glyphicon glyphicon-plus"></span> Tambah</a>
+                            <table class="table table-hover table-striped">
+                            <tr>
+                                <th>NO</th><th>ID</th><th>NAMA KATEGORI</th>
+                            </tr>
+                            <?php
+                            $no=0;
+                                foreach ($data_kategori as $dt_kat) {
+                                    $no++;
+                                    echo '<tr>
+                                         <td>'.$no.'</td>
+                                         <td>'.$dt_kat->id_kategori.'</td>
+                                         <td>'.$dt_kat->nama_kategori.'</td>
+                                         </tr>';
+                                }
+                            ?>
+                            
+                            </table>
+
+<?php if($this->session->flashdata('pesan')!=null): ?>
+<div class="alert alert-danger">
+<?= $this->session->flashdata('pesan');?></div>                
+<?php endif ?>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+
+<div class="modal fade" id="tambah">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Tambah Kategori</h4>
+      </div>
+      <div class="modal-body">
+        <form action="<?=base_url('index.php/kategori/simpan_kategori')?>" method="post">
+        Nama Kategori
+        <input type="text" name="nama_kategori" class="form-control"><br>
+        <input type="submit" name="simpan" value="Simpan" class="btn btn-success">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

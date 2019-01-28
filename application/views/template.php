@@ -291,7 +291,7 @@
                             <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
                             <li role="seperator" class="divider"></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                            <li><a href="<?=base_url('index.php/user/logout')?>"><i class="material-icons">input</i>Sign Out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -302,9 +302,6 @@
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li class="active">
-                        <a href="<?=base_url()?>">
-                            <i class="material-icons">home</i>
-                            <span>HOME</span>
                         </a>
                     </li> 
                     <li>
@@ -331,6 +328,31 @@
                             <span>Event</span>
                         </a>
                     </li> 
+                    <li>
+                        <a href="<?=base_url('index.php/kategori')?>">
+                        <i class="material-icons">dashboard</i>
+                            <span>Kategori</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?=base_url('index.php/barang')?>">
+                        <i class="material-icons">shopping_cart</i>
+                            <span>Barang</span>
+                        </a>
+                    </li>  
+                    
+                    <li>
+                        <a href="<?=base_url('index.php/Pelanggan/DaftarPelanggan')?>">
+                        <i class="material-icons">shopping_cart</i>
+                            <span>Form Daftar Pelanggan</span>
+                        </a>
+                    </li>  
+                    <li class="active">
+                        <a href="<?=base_url('index.php/Pelanggan/DataPelanggan')?>">
+                        <i class="material-icons">shopping_cart</i>
+                            <span>DataPelanggan</span>
+                        </a>
+                    </li>  
                 </ul>
             </div>
             <!-- #Menu -->
